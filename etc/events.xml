@@ -1,0 +1,17 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Created by Q-Solutions Studio
+ * Date: 26.01.2021
+ *
+ * @category    Magespices
+ * @package     Magespices_Moonpay
+ * @author      Maciej Buchert <maciej@qsolutionsstudio.com>
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:Event/etc/events.xsd">
+    <event name="checkout_onepage_controller_success_action">
+        <observer name="magespices_moonpay_update_order" instance="Magespices\Moonpay\Observer\UpdateOrder"/>
+    </event>
+</config>

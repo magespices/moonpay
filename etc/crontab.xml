@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Created by Q-Solutions Studio
+ * Date: 26.01.2021
+ *
+ * @category    Magespices
+ * @package     Magespices_Moonpay
+ * @author      Maciej Buchert <maciej@qsolutionsstudio.com>
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Cron:etc/crontab.xsd">
+    <group id="default">
+        <job name="magespices_moonpay_payment_update" instance="Magespices\Moonpay\Cron\PaymentUpdate" method="execute">
+            <schedule>*/5 * * * *</schedule>
+        </job>
+    </group>
+</config>

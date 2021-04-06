@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Created by Q-Solutions Studio
+ * Date: 25.01.2021
+ *
+ * @category    Magespices
+ * @package     Magespices_Moonpay
+ * @author      Maciej Buchert <maciej@qsolutionsstudio.com>
+ */
+-->
+<payment xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Payment:etc/payment.xsd">
+    <groups>
+        <group id="offline">
+            <label>Offline Payment Methods</label>
+        </group>
+    </groups>
+    <methods>
+        <method name="moonpay">
+            <allow_multiple_address>1</allow_multiple_address>
+        </method>
+    </methods>
+</payment>

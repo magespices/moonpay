@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<!--
+/**
+ * Created by Q-Solutions Studio
+ * Date: 25.01.2021
+ *
+ * @category    Magespices
+ * @package     Magespices_Moonpay
+ * @author      Maciej Buchert <maciej@qsolutionsstudio.com>
+ */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <payment>
+            <moonpay>
+                <active>0</active>
+                <title>Moonpay</title>
+                <order_status>pending</order_status>
+                <allowspecific>0</allowspecific>
+                <model>Magespices\Moonpay\Model\Payment\Moonpay</model>
+                <group>offline</group>
+                <min_order_total>20</min_order_total>
+                <max_order_total>12000</max_order_total>
+            </moonpay>
+        </payment>
+    </default>
+</config>
